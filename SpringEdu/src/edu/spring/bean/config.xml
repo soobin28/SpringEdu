@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="programmer" class="edu.spring.bean.Programmer" />
+	<bean id="designer" class="edu.spring.bean.Designer" />
+	
+	<!-- 이 방법을 이용하여 주입할 때, 기본생성자가 없으면 오류가 남. 
+	setEmp() -> emp라는 이름으로 사용됨./첫글자를 대문자로 바꾼 뒤 앞에 set을 붙인 메소드명.
+	spring에서 사용하는 하나의 규칙이다. -->
+	<bean id="develop2" class="edu.spring.bean.Develop">
+		<property name="emp" ref="designer" />
+	</bean>
+
+	<bean id="develop" class="edu.spring.bean.Develop"
+		c:emp-ref="programmer" />
+
+<!--  DI라고 함. 
+	<bean id="develop" class="edu.spring.bean.Develop">
+		<constructor-arg ref="programmer" />
+	</bean> -->
+
+</beans>
