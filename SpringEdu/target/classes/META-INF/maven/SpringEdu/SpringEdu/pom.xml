@@ -7,10 +7,53 @@
 	<version>0.0.1-SNAPSHOT</version>
 
 	<dependencies>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>4.2.0.RELEASE</version>
+		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
+			<version>4.2.0.RELEASE</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjweaver</artifactId>
+			<version>1.9.4</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjrt</artifactId>
+			<version>1.9.4</version>
+		</dependency>
+		<!-- DataSource 사용 -->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-dbcp2</artifactId>
+			<version>2.1.1</version>
+		</dependency>
+		<!-- MySQL 사용(DriverClassName) -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.40</version>
+		</dependency>
+		<!-- Spring JdbcTemplate 사용 -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>4.2.0.RELEASE</version>
+		</dependency>
+		<!-- Web Project -->
+		<!-- Spring MVC에 필요한 라이브러리 -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
 			<version>4.2.0.RELEASE</version>
 		</dependency>
 	</dependencies>

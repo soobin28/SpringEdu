@@ -9,6 +9,8 @@
 	<configs>
 		<config>src/edu/spring/test/config.xml</config>
 		<config>src/edu/spring/bean/config.xml</config>
+		<config>src/edu/spring/jdbc/config.xml</config>
+		<config>src/edu/spring/transaction/service/config.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>
